@@ -31,6 +31,7 @@ export const TaskCardTitle = () => {
             onChange={handleChange}
             onBlur={handleBlur}
             value={inputCardTitle}
+            maxLength="10"
           />
         </form>) : (
         <h3>{inputCardTitle}</h3>
