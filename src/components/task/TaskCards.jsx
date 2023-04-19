@@ -20,12 +20,13 @@ const TaskCards = () => {
             {...provided.droppableProps}
             ref={provided.innerRef}
           >
-            {taskCardsList.map((taskCard) => (
+            {taskCardsList.map((taskCard, index) => (
               <TaskCard
               key={taskCard.id}
               taskCardsList={taskCardsList}
               setTaskCardsList={setTaskCardsList}
               taskCard={taskCard}
+              index={index}
               />
               ))}
             <AddTaskCardButton

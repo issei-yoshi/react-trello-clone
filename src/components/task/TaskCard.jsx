@@ -6,11 +6,11 @@ import { TaskAddInput } from './input/TaskAddInput'
 import { TaskCardTitle } from './TaskCardTitle'
 import { Tasks } from './Tasks'
 
-function TaskCard({ taskCardsList, setTaskCardsList, taskCard }) {
+function TaskCard({ taskCardsList, setTaskCardsList, taskCard, index}) {
   const [inputText, setInputText] = useState("");
   const [taskList, setTaskList] = useState([]);
   return (
-    <Draggable draggableId={taskCard.id}>
+    <Draggable draggableId={taskCard.id} index={index}>
       {(provided) => (
         <div
           className='taskCard'
