@@ -12,6 +12,7 @@ export const TaskAddInput = ({
     setTaskList([
       ...taskList,
       {
+        id: taskList.length,
         text: inputText
       },
     ]);

@@ -1,10 +1,14 @@
 import React from 'react'
 
-export const Task = ({ task }) => {
+export const Task = ({ task, taskList, setTaskList }) => {
+  const handleDelete = (id) => {
+    setTaskList;
+  };
+
   return (
     <div className='taskBox'>
       <p className='taskText'>{task.text}</p>
-      <button className='taskTrashButton'>
+      <button className='taskTrashButton' onClick={() => handleDelete(task.id)}>
         <i class="fas fa-trash-alt"></i>
       </button>
     </div>
