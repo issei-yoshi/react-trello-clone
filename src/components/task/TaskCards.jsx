@@ -29,6 +29,7 @@ const TaskCards = () => {
               index={index}
               />
               ))}
+              {provided.placeholder}
             <AddTaskCardButton
               taskCardsList={taskCardsList}
               setTaskCardsList={setTaskCardsList}
