@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Task = ({ task, taskList, setTaskList }) => {
   const handleDelete = (id) => {
-    setTaskList;
+    setTaskList(taskList.filter((task) => task.id !== id));
   };
 
   return (
