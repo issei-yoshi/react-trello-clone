@@ -4,6 +4,9 @@ export const Task = ({ task }) => {
   return (
     <div className='taskBox'>
       <p className='taskText'>{task.text}</p>
+      <button className='taskTrashButton'>
+        <i class="fas fa-trash-alt"></i>
+      </button>
     </div>
   )
 }
