@@ -15,6 +15,7 @@ export const TaskAddInput = ({
         text: inputText
       },
     ]);
+    setInputText("");
   }
 
   const handleChange = (e) => {
@@ -24,7 +25,13 @@ export const TaskAddInput = ({
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <input type='text' placeholder='add a task' className='taskAddInput' onChange={handleChange} />
+        <input
+          type='text'
+          placeholder='add a task'
+          className='taskAddInput'
+          onChange={handleChange}
+          value={inputText}
+        />
       </form>
     </div>
   )
