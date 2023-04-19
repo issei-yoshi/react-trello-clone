@@ -9,7 +9,13 @@ export const TaskCardTitle = () => {
 
   return (
     <div onClick={handleClick}>
-      <h3>Today</h3>
+      {isClick ? (
+        <form>
+          <input type="text" />
+        </form>) : (
+        <h3>Today</h3>
+        )
+      }
     </div>
   )
 }
