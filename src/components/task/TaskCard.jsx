@@ -18,7 +18,10 @@ function TaskCard() {
         taskList={taskList}
         setTaskList={setTaskList}
       />
-      <Tasks />
+      <Tasks
+        inputText={inputText}
+        taskList={taskList}
+      />
     </div>
   )
 }
