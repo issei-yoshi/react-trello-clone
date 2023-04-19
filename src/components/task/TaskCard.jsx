@@ -16,9 +16,9 @@ function TaskCard({ taskCardsList, setTaskCardsList, taskCard, index}) {
           className='taskCard'
           ref={provided.innerRef}
           {...provided.draggableProps}
-          {...provided.dragHandleProps}
         >
-          <div className='taskCardTitleAndTaskCardDeleteButtonArea'>
+          <div className='taskCardTitleAndTaskCardDeleteButtonArea'
+          {...provided.dragHandleProps}>
             <TaskCardTitle />
             <TaskCardDeleteButton
               taskCardsList={taskCardsList}
