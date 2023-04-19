@@ -3,8 +3,12 @@ import React, { useState } from 'react'
 export const TaskCardTitle = () => {
   const [isClick, setIsClick] = useState(false);
 
+  const handleClick = () => {
+    setIsClick(true)
+  };
+
   return (
-    <div>
+    <div onClick={handleClick}>
       <h3>Today</h3>
     </div>
   )
