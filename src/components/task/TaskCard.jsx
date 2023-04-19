@@ -7,7 +7,7 @@ import { Tasks } from './Tasks'
 
 function TaskCard() {
   return (
-    <div>
+    <div className='taskCard'>
       <TaskCardTitle />
       <TaskCardDeleteButton />
       <TaskAddInput />
