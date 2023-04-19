@@ -13,8 +13,8 @@ const TaskCards = () => {
 
   return (
     <div className='taskCardsArea'>
-      {taskCardsList.map((taskCardList) => (
-        <TaskCard key={taskCardList.id} />
+      {taskCardsList.map((taskCard) => (
+        <TaskCard key={taskCard.id} />
       ))}
       <AddTaskCardButton
         taskCardsList={taskCardsList}
