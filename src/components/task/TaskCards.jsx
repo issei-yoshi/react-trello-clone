@@ -7,7 +7,7 @@ import TaskCard from './TaskCard'
 const TaskCards = () => {
   const [taskCardsList, setTaskCardsList] = useState([
     {
-      id: 0,
+      id: "0",
       draggableId: "item0"
     }
   ]);
