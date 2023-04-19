@@ -12,7 +12,11 @@ function TaskCard({ taskCardsList, setTaskCardsList, taskCard }) {
     <div className='taskCard'>
       <div className='taskCardTitleAndTaskCardDeleteButtonArea'>
         <TaskCardTitle />
-        <TaskCardDeleteButton />
+        <TaskCardDeleteButton
+          taskCardsList={taskCardsList}
+          setTaskCardsList={setTaskCardsList}
+          taskCard={taskCard}
+        />
       </div>
       <TaskAddInput
         inputText={inputText}

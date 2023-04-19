@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const TaskCardDeleteButton = () => {
+export const TaskCardDeleteButton = ({ taskCardsList, setTaskCardsList, taskCard }) => {
   const taskCardDeleteButton = () => {
 
   };
