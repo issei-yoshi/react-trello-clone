@@ -1,7 +1,9 @@
 import React from 'react'
 
-export const Task = () => {
+export const Task = ({ task }) => {
   return (
-    <div>Task</div>
+    <div className='taskBox'>
+      <p className='taskText'>{task.text}</p>
+    </div>
   )
 }

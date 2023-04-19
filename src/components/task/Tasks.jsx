@@ -7,7 +7,7 @@ export const Tasks = ({ taskList }) => {
     <div>
       {taskList.map((task) => (
         <div>
-          <Task />
+          <Task task={task} />
         </div>
       ))}
     </div>
