@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddTaskCardButton = () => {
+const AddTaskCardButton = ({ taskCardsList, setTaskCardsList }) => {
   return (
     <div className='addTaskCardButtonArea'>
       <button className='addTaskCardButton'>+</button>
