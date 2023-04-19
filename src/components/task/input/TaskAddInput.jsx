@@ -1,6 +1,11 @@
 import React from 'react'
 
-export const TaskAddInput = () => {
+export const TaskAddInput = ({
+  inputText,
+  setInputText,
+  taskList,
+  setTaskList
+}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
   }
