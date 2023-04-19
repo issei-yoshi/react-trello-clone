@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export const TaskCardTitle = () => {
+  const [isClick, setIsClick] = useState(false);
+
   return (
-    <div>TaskCardTitle</div>
+    <div>
+      <h3>Today</h3>
+    </div>
   )
 }
