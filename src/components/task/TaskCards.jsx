@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { DragDropContext, Droppable } from 'react-beautiful-dnd';
 
 import AddTaskCardButton from './button/AddTaskCardButton'
 import TaskCard from './TaskCard'
@@ -12,20 +13,29 @@ const TaskCards = () => {
   ]);
 
   return (
-    <div className='taskCardsArea'>
-      {taskCardsList.map((taskCard) => (
-        <TaskCard
-          key={taskCard.id}
-          taskCardsList={taskCardsList}
-          setTaskCardsList={setTaskCardsList}
-          taskCard={taskCard}
-        />
-      ))}
-      <AddTaskCardButton
-        taskCardsList={taskCardsList}
-        setTaskCardsList={setTaskCardsList}
-      />
-    </div>
+    <DragDropContext>
+      <Droppable droppableId='droppable' direction='horizontal'>
+        {(provided) => (
+          <div className='taskCardsArea'
+            {...provided.droppableProps}
+            ref={provided.innerRef}
+          >
+            {taskCardsList.map((taskCard) => (
+              <TaskCard
+              key={taskCard.id}
+              taskCardsList={taskCardsList}
+              setTaskCardsList={setTaskCardsList}
+              taskCard={taskCard}
+              />
+              ))}
+            <AddTaskCardButton
+              taskCardsList={taskCardsList}
+              setTaskCardsList={setTaskCardsList}
+              />
+          </div>
+        )}
+      </Droppable>
+    </DragDropContext>
   )
 }
 
