@@ -1,6 +1,6 @@
 import React from 'react'
 
-import AddTaskCardButton from './AddTaskCardButton'
+import AddTaskCardButton from './button/AddTaskCardButton'
 import TaskCard from './TaskCard'
 
 const TaskCards = () => {
