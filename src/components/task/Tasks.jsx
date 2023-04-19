@@ -5,6 +5,10 @@ export const Tasks = ({
   taskList,
  }) => {
   return (
-    <div>Tasks</div>
+    <div>
+      {taskList.map((task) => (
+        <div>{task.text}</div>
+      ))}
+    </div>
   )
 }
