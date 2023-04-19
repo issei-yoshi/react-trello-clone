@@ -1,3 +1,10 @@
+# Content
+ReactでTrelloクローンアプリケーションを作ってReactをマスターしよう！
+
+https://www.udemy.com/course/react-trello-development/
+
+https://github.com/Shin-sibainu/trello-clone
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
