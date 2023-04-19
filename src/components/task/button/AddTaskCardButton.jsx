@@ -2,7 +2,9 @@ import React from 'react'
 
 const AddTaskCardButton = () => {
   return (
-    <div>AddTaskCardButton</div>
+    <div className='addTaskCardButtonArea'>
+      <button className='addTaskCardButton'>+</button>
+    </div>
   )
 }
 
