@@ -5,7 +5,7 @@ import { TaskAddInput } from './input/TaskAddInput'
 import { TaskCardTitle } from './TaskCardTitle'
 import { Tasks } from './Tasks'
 
-function TaskCard() {
+function TaskCard({ taskCardsList, setTaskCardsList, taskCard }) {
   const [inputText, setInputText] = useState("");
   const [taskList, setTaskList] = useState([]);
   return (
