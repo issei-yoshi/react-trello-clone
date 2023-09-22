@@ -1,6 +1,8 @@
-# Content
-ReactでTrelloクローンアプリケーションを作ってReactをマスターしよう！
+# Version
+- "react": "^17.0.2",
 
+# Content
+■ReactでTrelloクローンアプリケーションを作ってReactをマスターしよう！
 https://www.udemy.com/course/react-trello-development/
 
 https://github.com/Shin-sibainu/trello-clone
